@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    flex-direction: column;
+    background: #2c0154;
+    width: 100%;
+    text-align: center;
+    transition: left 0.5s ease;
+    padding: 1.5rem;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .bars {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* <<<<<<<<<<HOME SECTION>>>>>>>>>> */
+@media screen and (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .left-side {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .right-side img {
+    width: 70vmin;
+    height: 70vmin;
+  }
+}
+
+/* <<<<<<<<<< SKILLS SECTION >>>>>>>>>>>> */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skills-card {
+    text-align: center;
+  }
+}
+
+/* <<<<<<<<<< PROJECT SECTION >>>>>>>>>>>> */
+@media screen and (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 90%;
+    max-width: 320px;
+  }
+  .project-card:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
+/* <<<<<<< CONTACT SECTION >>>>>>>>>> */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .right {
+    margin-top: 2rem;
+  }
+}
